@@ -122,7 +122,7 @@ article.product .price {
 article.product .price .original-price  {
     display: block;
     color: #007BFF;
-    font-size: 0.9em;
+    font-size: 1.2em;
 }
 
 article.product button {
