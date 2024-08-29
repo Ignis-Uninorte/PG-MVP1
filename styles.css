@@ -31,16 +31,14 @@ nav.breadcrumb {
     color: #173B61;
     font-size: 0.9em;
     margin-bottom: 15px;
+    text-decoration: underline;
 }
 
 nav.breadcrumb a {
     color: #007BFF;
-    text-decoration: none;
-}
-
-nav.breadcrumb a:hover {
     text-decoration: underline;
 }
+
 
 section.product-info {
     display: grid;
