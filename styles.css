@@ -11,6 +11,7 @@ Grey Blue #7697A0 recuadros y cosas para seleccionar
 
 body{
     font-family: "SUSE", sans-serif;
+    color: #173B61;
     margin: 0;
     padding: 0;
 }
@@ -32,6 +33,7 @@ nav.breadcrumb-plp{
 }
 
 nav.breadcrumb-plp a{
+    font-family: "Montserrat", sans-serif;
     color: #000000;
     font-weight: 400;
     text-decoration: none;
@@ -54,8 +56,16 @@ section.information-above-plp{
     background-color: #FFEBD0;
 }
 
+section.information-above-plp p{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0px 5px;
+    color: #173B61;
+}
+
 div.orderby-plp {
     margin: 0px;
+    margin-right: 10px;
     display:block;
     text-align: center;
     padding: 2px;
@@ -75,6 +85,36 @@ aside.filters-plp{
     grid-row: 2/4;
     grid-column: 1;
     margin: 0px;
-    padding: 0px;
+    padding: 10px;
     background-color: #ff9100;
+}
+
+aside.filters-plp h2{
+    margin: 0;
+    padding: 5px 0px;
+}
+
+aside.filters-plp h4{
+    margin: 0;
+    padding: 5px 0px;
+}
+
+aside.filters-plp ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+aside.filters-plp ul form{
+    display:flex;
+    flex-direction: column;
+    align-items: right;
+    padding: 5px;
+}
+
+aside.filter-plp label{
+    font-family: "Montserrat", sans-serif;
+}
+
+aside.filters-plp label:hover{
+    color: #ffffff;
 }
