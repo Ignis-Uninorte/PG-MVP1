@@ -1,6 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap');
 
-body {
+
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+/* PDP */
+main-pdp {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+body-pdp {
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
@@ -11,21 +31,6 @@ body {
     color: #173B61;
 }
 
-header, footer {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-}
 
 nav.breadcrumb {
     color: #173B61;
