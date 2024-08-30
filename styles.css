@@ -1,0 +1,80 @@
+/****************************************************************
+Styles for the Product List Page (PLP)
+****************************************************************/
+
+
+/** Denim #173B61 para textos
+Orange #FD8916 para botones y links
+Pure #FFEBD0 Para el fondo (AHORA LE FONDO ES BLANCO)
+Grey Blue #7697A0 recuadros y cosas para seleccionar
+**/
+
+body{
+    font-family: "SUSE", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+div.grid-container-plp{
+    display: grid;
+    grid-gap: 0px;
+    margin-top: 10px;
+}
+
+nav.breadcrumb-plp{
+    grid-row: 1;
+    grid-column: 1/4;
+    font-size: 0.9em;
+    color: #173B61;
+    margin-left: 10px;
+    padding: 7px 16px;
+    background-color: #FFEBD0;
+}
+
+nav.breadcrumb-plp a{
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav.breadcrumb-plp a:hover{
+    color: #FD8916;
+    text-decoration: underline;
+}
+
+section.information-above-plp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-row: 2;
+    grid-column: 2/4;
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFEBD0;
+}
+
+div.orderby-plp {
+    margin: 0px;
+    display:block;
+    text-align: center;
+    padding: 2px;
+    background-color: #de9292;
+}
+
+div.orderby-plp h4{
+    margin: 0;
+    padding: 5px 0px;
+}
+
+#orderby-plp-box{
+    padding: 5px;
+}
+
+aside.filters-plp{
+    grid-row: 2/4;
+    grid-column: 1;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ff9100;
+}
