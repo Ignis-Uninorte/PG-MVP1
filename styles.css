@@ -374,7 +374,7 @@ footer {
         padding-left: 15px;
         padding-top: 10px;
         padding-bottom: 10px;
-        width: 100%;
+        width: 93%;
         height: 155px;
         display: flex;
     }
@@ -529,6 +529,7 @@ body-pdp {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     color: #173B61;
+    background-color: #ffffff;
 }
 
 
