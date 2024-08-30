@@ -372,7 +372,6 @@ footer {
     .subheader {
         background-color: #173b61;
         padding-left: 15px;
-        padding-right: 15px;
         padding-top: 10px;
         padding-bottom: 10px;
         width: 100%;
@@ -397,7 +396,8 @@ footer {
     .menu-item a {
         display: block;
         width: 100%;
-        padding: 10px 15px;
+        padding: 10px;
+        padding-left: 15px;
         text-align: left;
         background-color: #173b61;
         color: #fff;
