@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-SC">
+    <h2>Products</h2>
+    <div class="container">
+        
+        <div class="product-list">
+
+            <div class="product-item">
+                <div class="title-img-product">
+                    
+                    <img src="img/rp1.png" alt="Product 1" class="product-image">
+                </div>
+                
+                <div class="product-details">
+                    
+                    <div class="shipping-method">
+                        <h3>Product 1</h3>
+                        
+
+                        <h4>Shipping method</h4>
+                        <label><input type="radio" name="shipping1" value="standard" checked> Standard</label>
+                        <label><input type="radio" name="shipping1" value="express"> Express</label>
+                        <label><input type="radio" name="shipping1" value="pickup"> In-store Pickup</label>
+                    </div>
+
+                    <label for="quantity1" style="font-weight: bold;">Quantity:</label>
+                    <select id="quantity1" name="quantity1">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+            </div>
+            <!-- second item -->
+            <div class="product-item">
+
+                <div class="title-img-product">
+                    
+                    <img src="img/rp1.png" alt="Product 2" class="product-image">
+                </div>
+                
+                <div class="product-details">
+                    <div class="shipping-method">
+                        <h3>Product 2</h3>
+                    
+                        <h4>Shipping method</h4>
+                        <label><input type="radio" name="shipping2" value="standard" checked> Standard</label>
+                        <label><input type="radio" name="shipping2" value="express"> Express</label>
+                        <label><input type="radio" name="shipping2" value="pickup"> In-store Pickup</label>
+                    </div>
+                    <label for="quantity2" style="font-weight: bold;">Quantity:</label>
+                    <select id="quantity2" name="quantity2">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+            </div>
+            <!-- third item -->
+            <div class="product-item">
+
+                <div class="title-img-product">
+                   
+                    <img src="img/rp1.png" alt="Product 3" class="product-image">
+                </div>
+                <div class="product-details">
+                    <div class="shipping-method">
+                        <h3>Product 3</h3>
+                        
+                        <h4>Shipping method</h4>
+                        <label><input type="radio" name="shipping3" value="standard" checked> Standard</label>
+                        <label><input type="radio" name="shipping3" value="express"> Express</label>
+                        <label><input type="radio" name="shipping3" value="pickup"> In-store Pickup</label>
+                    </div>
+                    <label for="quantity3" style="font-weight: bold;" >Quantity:</label>
+                    <select id="quantity3" name="quantity3">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <ul>
+                <li>Subtotal: $<span id="subtotal">0.00</span></li>
+                <li>Shipping Cost: $<span id="shipping">0.00</span></li>
+                <li>Discounts: $<span id="discounts">0.00</span></li>
+                <li>Total Discounts: $<span id="total-discounts">0.00</span></li>
+                <li>VAT: $<span id="tax">0.00</span></li>
+                <li>Total: $<span id="total">0.00</span></li>
+            </ul>
+            <button id="initiate-payment">Initiate Payment</button>
+        </div>
+    </div>
+</body>
+</html>
