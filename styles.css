@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
 
-body {
+.home-body { 
     font-family: "Montserrat", sans-serif;
     font-size: 28px;
     display:grid;
     grid-template-columns: 200px 460px 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1300px 750px 500px 1fr;
+    grid-template-rows: 1fr 1300px 1300px 500px 1fr;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -494,8 +494,8 @@ footer {
         background-color: #173b61;
         padding-left: 15px;
         padding-top: 10px;
-        padding-bottom: 10px;
-        width: 100%;
+        padding-bottom: 10px;    
+        width: 93%;
         height: 155px;
         display: flex;
     }
@@ -558,6 +558,8 @@ footer {
         color: #007bff;
     }
 
+    
+
     .footer-bottom {
         flex-direction: column;
         align-items: flex-start;
@@ -579,6 +581,39 @@ footer {
     .footer-copyright {
         margin-top: 30px;
     }
+
+       /* Aqui comienza el pagina inicio */
+       .section-1 {
+        background-color: #173B61;
+    }
+
+    .section-1 img {
+        height: auto;
+        border-top: 160px solid #173B61;
+        width: 74%;
+        height: calc(25% - 0px); /* Adjust for border spacing */
+        object-fit:fill; /* Ensure the images cover the entire space */
+    }
+
+    body {
+        grid-template-rows: 1fr 1300px 4000px 500px 1fr;
+    }
+
+    .section-2 {
+        grid-template-columns: repeat(1, 1fr); /* Adjust to 2 columns on smaller screens */
+        margin-right: 150px;
+    }
+
+    .section-3 {
+        margin: 0px; /* Simplify margins for smaller screens */
+      }
+    
+      .section-3 img {
+        margin-right: 300px;
+        width: 75%;
+        height: auto; /* Allow the height to adjust naturally */
+        object-fit: fill; /* Ensure the image still covers the space but maintains aspect ratio */
+      }
 }
 
 @media (max-width: 480px) {
@@ -628,5 +663,204 @@ footer {
 
     .footer-copyright {
         font-size: 12px;
+    }
+
+        /* Section 1 */
+ .section-1{
+    justify-content:space-around; /* Distribute images evenly */
+    align-items:flex-start;
+
+ } 
+  
+ .section-1 img {
+    height: auto;
+    border-top: 10px solid #173B61;
+    width: 100%;
+    height: calc(25% - 1px); /* Adjust for border spacing */
+    object-fit:fill; /* Ensure the images cover the entire space */
+ }
+
+ body {
+    grid-template-rows: 1fr 1300px 4000px 500px 1fr;
+ }
+
+ .section-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Single column on smaller screens */
+    gap: 16px; /* Space between grid items */
+    width: 100%; /* Ensure the grid container takes up full width */
+    padding: 0 10px; /* Add padding to prevent content from touching screen edges */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+  }
+
+  .product {
+    margin-top: 5px;
+ }
+
+ .section-3 {
+    margin: 0px; /* Simplify margins for smaller screens */
+   }
+
+  .section-3 img {
+    margin-right: 300px;
+    width: 100%;
+    height: auto; /* Allow the height to adjust naturally */
+    object-fit: fill; /* Ensure the image still covers the space but maintains aspect ratio */
+  }
+}
+
+
+/* --------------------------------------------------PDP --------------------------------------------------------------------*/
+main-pdp {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+body-pdp {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    color: #173B61;
+    background-color: #ffffff;
+}
+
+
+nav.breadcrumb {
+    color: #173B61;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+nav.breadcrumb a {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+
+section.product-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+section.product-info img {
+    width: 100%;
+    height: auto;
+}
+
+section.product-details h1 {
+    font-size: 2em;
+    margin-top: 0;
+    font-family: "SUSE", sans-serif;
+}
+
+section.product-details p {
+    margin: 10px 0;
+}
+
+section.specifications {
+    margin-top: 20px;
+}
+
+section.specifications h2 {
+    margin-bottom: 10px;
+}
+
+section.specifications table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+section.specifications td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+section.related-products {
+    margin-top: 30px;
+}
+
+section.related-products h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+section.related-products .product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+}
+
+article.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+article.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+article.product h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+article.product .price {
+    margin: 10px 0;
+}
+
+
+article.product .price .original-price  {
+    display: block;
+    color: #007BFF;
+    font-size: 1.2em;
+}
+
+article.product button {
+    padding: 10px 15px;
+    background-color:  #FD8916;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: "SUSE", sans-serif;
+    margin-top: 10px;
+}
+
+article.product button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    section.product-info {
+        grid-template-columns: 1fr;
+    }
+    section.related-products .product-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, auto);
+    }
+}
+
+@media (max-width: 480px) {
+    section.related-products .product-list {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, auto);
     }
 }
