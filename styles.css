@@ -584,20 +584,20 @@ footer {
 
        /* Aqui comienza el pagina inicio */
        .section-1 {
-        margin-top: 25%;
+        /* margin-top: 25%; */
         background-color: #173B61;
     }
 
     .section-1 img {
         height: auto;
-        border-top: 160px solid #173B61;
+        border-top: 15px solid #173B61;
         width: 74%;
         height: calc(25% - 0px); /* Adjust for border spacing */
         object-fit:fill; /* Ensure the images cover the entire space */
     }
 
     body {
-        grid-template-rows: 1fr 1300px 4000px 500px 1fr;
+        grid-template-rows: 1fr 1300px 4000px 300px 1fr;
     }
 
     .section-2 {
@@ -675,7 +675,6 @@ footer {
   
  .section-1 img {
     height: auto;
-    border-top: 10px solid #173B61;
     width: 100%;
     height: calc(25% - 1px); /* Adjust for border spacing */
     object-fit:fill; /* Ensure the images cover the entire space */
