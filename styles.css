@@ -515,17 +515,11 @@ Styles for the Product List Page (PLP)
 ****************************************************************/
 
 
-/** Denim #173B61 para textos
-Orange #FD8916 para botones y links
-Pure #FFEBD0 Para el fondo (AHORA LE FONDO ES BLANCO)
-Grey Blue #7697A0 recuadros y cosas para seleccionar
-**/
-
 div.grid-container-plp{
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
     grid-gap: 0px;
-    margin-top: 10px;
+    margin: 0px;
 }
 
 nav.breadcrumb-plp{
@@ -533,7 +527,7 @@ nav.breadcrumb-plp{
     grid-column: 1/4;
     font-size: 0.9em;
     color: #173B61;
-    padding: 7px 16px;
+    padding: 1.5% 2%;
     background-color: #FFEBD0;
 }
 
@@ -587,7 +581,7 @@ aside.filters-plp{
     grid-row: 2/4;
     grid-column: 1;
     margin: 0px;
-    padding: 10px;
+    padding: 5em 10px;
     background-color: #889ea4;
 }
 
@@ -613,8 +607,16 @@ aside.filters-plp ul form{
     padding: 5px;
 }
 
-aside.filter-plp label{
-    font-family: "Montserrat", sans-serif;
+aside.filters-plp label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+aside.filters-plp label p{
+    margin: 0;
+    padding: 0px 5px;
+    color: #ffffff;
 }
 
 aside.filters-plp label:hover{
@@ -630,6 +632,7 @@ section.content-plp{
 }
 
 section.content-plp ul{
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     list-style-type: none;
@@ -641,10 +644,18 @@ section.content-plp ul li.product{
     border: 2px solid #7697A0;
     border-radius: 5px;
     padding: 5px 20px;
+    margin: 10px;
 }
 
 section.content-plp ul li.product p{
     margin: 5px 0px;
+}
+
+
+section.content-plp ul li.product a img{
+    width: 50%;
+    height: auto;
+    margin: 0px;
 }
 
 section.content-plp ul li.product a{
@@ -677,7 +688,7 @@ section.content-plp ul li a button {
     background-color: #FD8916;
     color: white;
     border: none;
-    margin-top: 5px;
+    margin: 5px 0px;
     padding: 8px 16px;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
@@ -690,4 +701,3 @@ section.content-plp ul li a button:hover {
 section.content-plp ul li a i.fa-solid.fa-cart-shopping {
     padding-right: 5px;
 }
-
