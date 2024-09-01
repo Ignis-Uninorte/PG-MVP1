@@ -641,6 +641,7 @@ section.content-plp ul{
 }
 
 section.content-plp ul li.product{
+    background-color: #ffffff;
     border: 2px solid #7697A0;
     border-radius: 5px;
     padding: 5px 20px;
@@ -656,6 +657,11 @@ section.content-plp ul li.product a img{
     width: 50%;
     height: auto;
     margin: 0px;
+}
+
+section.content-plp ul li.product img.rating{
+    width: 80%;
+    height: auto;
 }
 
 section.content-plp ul li.product a{
