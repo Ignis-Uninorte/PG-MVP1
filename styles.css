@@ -707,3 +707,17 @@ section.content-plp ul li a button:hover {
 section.content-plp ul li a i.fa-solid.fa-cart-shopping {
     padding-right: 5px;
 }
+
+div.banner{
+    grid-row: 4;
+    grid-column: 1/4;
+    margin: 0px;
+}
+
+div.banner img{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
