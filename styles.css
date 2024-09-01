@@ -495,7 +495,7 @@ footer {
         padding-left: 15px;
         padding-top: 10px;
         padding-bottom: 10px;    
-        width: 93%;
+        width: 95.6%;
         height: 155px;
         display: flex;
     }
@@ -584,6 +584,7 @@ footer {
 
        /* Aqui comienza el pagina inicio */
        .section-1 {
+        margin-top: 25%;
         background-color: #173B61;
     }
 
@@ -680,7 +681,7 @@ footer {
     object-fit:fill; /* Ensure the images cover the entire space */
  }
 
- body {
+ .home-body {
     grid-template-rows: 1fr 1300px 4000px 500px 1fr;
  }
 
