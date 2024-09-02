@@ -1,6 +1,6 @@
-/* CSS PARA EL SHOPPING CART */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap');
+/* Importing the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
 
 * {
@@ -10,35 +10,20 @@
     padding: 0;
     
 }
-/* migajas de pan  */
-
-nav.breadcrumb {
-    color: #173B61;
-    font-size: 0.9em;
-    margin-bottom: 15px;
-    text-decoration: underline;
-}
-
-nav.breadcrumb a {
-    color: #007BFF;
-    text-decoration: underline;
-}
 
 
-
-/* Header styles */
+/* General styles */
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 15px 30px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 }
 
 .logo {
-    margin: 0px;
+    margin-left: 100px;
 }
 
 .logo img {
@@ -58,8 +43,10 @@ nav.breadcrumb a {
     background: transparent;
     padding: 10px;
     font-size: 16px;
+    width: 800px;
     outline: none;
     color: #173b61;
+
 }
 
 .search-button {
@@ -77,7 +64,7 @@ nav.breadcrumb a {
 .account-cart {
     display: flex;
     align-items: center;    
-    margin: 0;
+    margin-right: 250px;
 }
 
 .account-cart a {
@@ -132,6 +119,7 @@ nav.breadcrumb a {
     height: 60px;
     align-items: center;
 }
+
 
 .menu-item {
     position: relative;
@@ -204,7 +192,7 @@ nav.breadcrumb a {
     color: #007bff;
 }
 
-/*  Adding arrow indicator for submenu */
+/* Optional: Adding arrow indicator for submenu */
 .menu-item > a::after {
     content: '▼';
     margin-left: 8px;
@@ -269,7 +257,8 @@ footer {
 
 .footer-column {
     flex: 1;
-    margin: 0 10%;
+    margin: 0 20px;
+    padding-left: 160px;
     justify-content: center;
 }
 
@@ -313,6 +302,26 @@ footer {
     margin: 0;
 }
 
+/* CSS PARA EL SHOPPING CART */
+
+
+/* migajas de pan  */
+
+nav.breadcrumb {
+    color: #173B61;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+nav.breadcrumb a {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+
+
+
 
 /* STYLES FOT SHOPPING CART */
 
@@ -326,18 +335,17 @@ footer {
     margin-bottom: 40px;
     text-align: center;
 }
-.container {
+.container-sc {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
 }
-.product-list {
+.product-list-sc {
     flex: 2;
     padding: 20px;
     border-radius: 10px;
 }
-.product-item {
-
+.product-item-sc {
     display: flex;
     align-items: flex-start;
     margin-bottom: 30px;
@@ -346,21 +354,21 @@ footer {
     justify-content: center;
     align-items: center;
 }
-.product-item:last-child {
+.product-item-sc:last-child {
     border-bottom: none;
 }
-.product-image {
+.product-image-sc {
     width: 370px;
     height: 250px;
     border-radius: 5px;
     padding: 20px;
 }
-.product-details {
+.product-details-sc {
     flex: 1;
    
     
 }
-.product-details h3 {
+.product-details-sc h3 {
     margin-bottom: 10px;
 }
 .shipping-method {
@@ -374,11 +382,11 @@ footer {
     margin-bottom: 5px;
     gap: 10px;
 }
-.product-details label {
+.product-details-sc label {
     display: block;
 
 }
-.product-details select {
+.product-details-sc select {
     padding: 5px;
     border: 1px solid #ddd;
     width: 100px;
@@ -407,6 +415,7 @@ footer {
 .order-summary ul li span {
     float: right;
 }
+
 .order-summary button {
     width: 100%;
     padding: 10px;
@@ -422,20 +431,20 @@ footer {
     background-color: #305d69;
 }
 /* Para que sea responsive*/
-@media (max-width: 1105px) {
-    .container {
+@media (max-width: 1005px) {
+    .container-sc {
         flex-direction: column;
     }
-    .product-item{
+    .product-item-sc{
         flex-direction: column;
         align-items: center;
         gap: 20px;
         justify-content: center;
     }
-    .product-list{
+    .product-list-sc{
         margin: 20px;
     }
-    .product-image {
+    .product-image-sc {
         width: 320px;
         height: 190px;  
     }
@@ -449,58 +458,166 @@ footer {
 }
 
 
-@media (max-width: 875px) {
+/* responsive del header y footer */
+
+/* General Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust header container */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    /* Adjust logo */
+    .logo {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 80px;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    /* Adjust search bar */
+    .search-bar {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .search-button img {
+        width: 16px;
+        height: 16px;
+    }
+
+    
+    /* Account cart adjustments */
+    .account-cart {
+        margin-top: 20px;
+        padding-top: 20px;
+        justify-content: space-between; /* Distribute space evenly */
+        width: 50%;
+        align-items: center;
+        margin: 0 15px;	
+    }
+
+    .account-link, .cart-link {
+        display: flex;
+        flex-direction: row; /* Align icon and text horizontally */
+        align-items: center;
+    }
+
+    .account-link span, .cart-link span {
+        margin-left: 5px; /* Small gap between icon and text */
+        font-size: 12px;
+    }
+
+    /* Subheader adjustments */
+    /* Adjust the subheader for mobile devices */
+    .subheader {
+        background-color: #173b61;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        height: 155px;
+        display: flex;
+    }
+
+    /* Ensure menu items align properly */
+    .menu {
+        display: block; /* Switch from flex to block layout */
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-item {
+        display: block; /* Make each menu item take full width */
+        width: 100%;
+        margin: 0;
+    }
+
+    .menu-item a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        padding-left: 15px;
+        text-align: left;
+        background-color: #173b61;
+        color: #fff;
+        font-size: 14px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* Submenu adjustments */
+    .submenu {
+        display: none; /* Initially hide the submenu */
+        position: static; /* Let the submenu push down other content */
+        width: 100%; /* Ensure submenu takes full width */
+        padding: 0;
+        margin: 0;
+        background-color: #f4f6f9;
+    }
+
+    .menu-item:hover .submenu,
+    .menu-item:focus-within .submenu {
+        display: block;
+    }
+
+    .submenu li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .submenu li a {
+        display: block;
+        padding: 8px 15px;
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+    }
+
+    .submenu li a:hover {
+        color: #007bff;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-column {
+        margin: 20px 0;
+        padding-left: 0;
+    }
+
+    .footer-title {
+        font-size: 16px;
+    }
+
+    .footer-column ul li a {
+        font-size: 13px;
+    }
+
+    .footer-copyright {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
     /* Further adjustments for smaller mobile screens */
-   .header-container {
-    padding: 10px;
-}
-
-.logo img {
-    height: 60px;
-}
-
-.search-bar input[type="text"] {
-    font-size: 12px;
-    padding: 8px;
-}
-
-.account-cart {
-    width: 100%;
-    justify-content: space-around; 
-}
-
-.account-link span, .cart-link span {
-    font-size: 10px;
-}
-
-.subheader {
-    padding: 0 10px;
-}
-
-.menu-item a {
-    font-size: 14px;
-    padding: 10px;
-}
-
-.submenu li a {
-    font-size: 12px;
-}
-
-.footer-middle {
-    padding: 20px;
-}
-
-.footer-bottom {
-    padding: 10px 0;
-}
-
-.footer-copyright {
-    font-size: 12px;
-}
-}
-
-
-@media (max-width: 580px) {
     .header-container {
         padding: 10px;
     }
