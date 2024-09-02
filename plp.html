@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Products List</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/72dd3afc0a.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="plp">
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <img src="img\Ignis_Store_Logo.png" alt="Company Logo">
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button class="search-button">
+                        <img src="img\search_icon.svg" alt="Search">
+                    </button>
+                </div>
+                <div class="account-cart">
+                    <a class="account-link">
+                        <img src="img\account-icon.svg" alt="My Account">
+                        <span>My Account</span>
+                    </a>
+                    <div class="divider"></div>
+                    <a href="cart.html" class="cart-link">
+                        <img src="img\cart-icon.svg" alt="Cart">
+                        <span>My Cart</span>
+                    </a>
+                </div>
+            </div>
+            <nav class="subheader">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#">Technology</a>
+                        <ul class="submenu">
+                            <li><a href="plp-technology.html">Computers</a></li>
+                            <li><a href="#">Televisions</a></li>
+                            <li><a href="#">Audio</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Printing</a></li>
+                            <li><a href="#">Cameras</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Appliances</a>
+                        <ul class="submenu">
+                            <li><a href="#">Air Conditioning</a></li>
+                            <li><a href="#">Refrigeration</a></li>
+                            <li><a href="#">Washers/Dryers</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Mobile Devices</a>
+                        <ul class="submenu">
+                            <li><a href="#">Phones</a></li>
+                            <li><a href="plp.html">Tablets</a></li>
+                            <li><a href="#">Smartwatches</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Home</a>
+                        <ul class="submenu">
+                            <li><a href="#">Living Room</a></li>
+                            <li><a href="#">Dining Room</a></li>
+                            <li><a href="#">Kitchen</a></li>
+                            <li><a href="#">Bathroom</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="grid-container-plp">
+                <nav class="breadcrumb-plp">
+                    <a href="index.html">Home</a> &gt; <a href="plp.html">Mobile Devices &gt; Tablets </a>
+                </nav>
+                <section class="information-above-plp">
+                    <p>Showing 1-10 of 100 results</p>
+                    <div class="orderby-plp">
+                        <h4>Order By</h4>
+                        <form>
+                            <select id="orderby-plp-box">
+                                <option value="relevance">Relevance</option>
+                                <option value="date">Date</option>
+                                <option value="pricel-h">Price lower to higher</option>
+                                <option value="priceh-l">Price higher to lower</option>
+                            </select>
+                        </form>
+                    </div>
+                </section> 
+                <aside class="filters-plp">
+                    <h2>Filters</h2>
+                    <ul>
+                        <li>
+                            <form>
+                                <h4>Brands</h4>
+                                <label>
+                                    <input id="samsung"type="checkbox">
+                                    Samsung
+                                    <p class="count">(30)</p>
+                                </label>
+                                <label>
+                                    <input id="apple" type="checkbox">
+                                    Apple
+                                    <p class="count">(10)</p>
+                                </label>
+                                <label>
+                                    <input id="lenovo" type="checkbox">
+                                    Lenovo
+                                    <p class="count">(20)</p>
+                                </label>
+                                <label>
+                                    <input id="intel" type="checkbox">
+                                    Intel
+                                    <p class="count">(20)</p>
+                                </label>
+                                <label>
+                                    <input id="amazon" type="checkbox">
+                                    Amazon
+                                    <p class="count">(15)</p>
+                                </label>
+                                <label>
+                                    <input id="COOPERS" type="checkbox">
+                                    COOPERS
+                                    <p class="count">(5)</p>
+                                </label>
+                            </form>
+                        </li>
+                        <li>
+                            <form>
+                                <h4>Condition</h4>
+                                <label>
+                                    <input id="new" type="checkbox">
+                                    New
+                                    <p class="count">(50)</p>
+                                </label>
+                                <label>
+                                    <input id="renewed" type="checkbox">
+                                    Renewed
+                                    <p class="count">(30)</p>
+                                </label>
+                                <label>
+                                    <input id="renewed" type="checkbox">
+                                    Used
+                                    <p class="count">(20)</p>
+                                </label>
+                            </form>
+                        </li>
+                        <li>
+                            <form>
+                                <h4>Memory Storage Capacity</h4>
+                                <label>
+                                    <input id="8gb" type="checkbox">
+                                    8GB
+                                    <p class="count">(5)</p>
+                                </label>
+                                <label>
+                                    <input id="16gb" type="checkbox">
+                                    16GB
+                                    <p class="count">(15)</p>
+                                </label>
+                                <label>
+                                    <input id="32" type="checkbox">
+                                    32GB
+                                    <p class="count">(40)</p>
+                                </label>
+                                <label>
+                                    <input id="64above" type="checkbox">
+                                    64GB & Above
+                                    <p class="count">(40)</p>
+                                </label>
+                            </form>
+                        </li>
+                        <li>
+                            <form>
+                                <h4>Tablet Display Size</h4>
+                                <label>
+                                    <input id="under7" type="checkbox">
+                                    Under 7 Inches
+                                    <p class="count">(5)</p>
+                                </label>
+                                <label>
+                                    <input id="789" type="checkbox">
+                                    7 to 8.9 Inches
+                                    <p class="count">(10)</p>
+                                </label>
+                                <label>
+                                    <input id="999" type="checkbox">
+                                    9 to 9.9 Inches
+                                    <p class="count">(10)</p>
+                                </label>
+                                <label>
+                                    <input id="10109" type="checkbox">
+                                    10 to 10.9 Inches
+                                    <p class="count">(15)</p>
+                                </label>
+                                <label>
+                                    <input id="11above" type="checkbox">
+                                    11 Inches & Above
+                                    <p class="count">(60)</p>
+                                </label>
+                            </form>
+                        </li>
+                        <li>
+                            <form>
+                                <h4>Tablet Operating System</h4>
+                                <label>
+                                    <input id="android" type="checkbox">
+                                    Android
+                                    <p class="count">(70)</p>
+                                </label>
+                                <label>
+                                    <input id="ios" type="checkbox">
+                                    iOS
+                                    <p class="count">(10)</p>
+                                </label>
+                                <label>
+                                    <input id="windows" type="checkbox">
+                                    Windows
+                                    <p class="count">(20)</p>
+                                </label>
+                            </form>
+                        </li>
+                    </ul>
+                </aside>
+                <section class="content-plp">
+                    <ul>
+                        <li class="product">
+                            <a href="pdp.html">
+                                <img src="img\samsung.jpg" alt="Samsung Galaxy Tab S9 FE+ Plus 12.4” 128GB Android Tablet">
+                                <h3>Samsung Galaxy Tab S9 FE+ Plus 12.4” 128GB Android Tablet</h3>
+                                <p class="short-description">New tablet Samsung with 128 GB. Display Size of 12.4 Inches</p>
+                                <div class="review">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    5
+                                </div>
+                                <p><s>$599.99</s></p>
+                                <div class="price-discount">
+                                    <p>$479.99</p>
+                                    <p class="discount">(20% off)</p>
+                                </div>
+                                <button type="button">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add to cart
+                                </button>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="#">
+                                <img src="img\rp1.jpg" alt="Samsung Galaxy Tab S9 FE+ Plus 12.4” 128GB Android Tablet">
+                                <h3>SAMSUNG Galaxy Tab A9+ Plus 11” 64GB Android Tablet</h3>
+                                <p class="short-description">Renew tablet Samsung with 64 GB. Display Size of 11 Inches</p>
+                                <div class="review">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    3
+                                </div>
+                                <p><s>$169.99</s></p>
+                                <div class="price-discount">
+                                    <p>$152.991</p>
+                                    <p class="discount">(10% off)</p>
+                                </div>
+                                <button type="button">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add to cart
+                                </button>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="#">
+                                <img src="img\rp2.jpg" alt="Android Tablet">
+                                <h3>Android Tablet</h3>
+                                <p class="short-description">Used Android tablet with 16GB. Display Size of 11 Inches</p>
+                                <div class="review">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    4
+                                </div>
+                                <p><s>$89.99</s></p>
+                                <div class="price-discount">
+                                    <p>$80.99</p>
+                                    <p class="discount">(10% off)</p>
+                                </div>
+                                <button type="button">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add to cart
+                                </button>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="#">
+                                <img src="img\rp3.jpg" alt="Amazon Fire HD 10 tablet">
+                                <h3>Amazon Fire HD 10 tablet</h3>
+                                <p class="short-description">Used Android tablet with 8GB. Display Size of 10 Inches</p>
+                                <div class="review">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    2
+                                </div>
+                                <p><s>$79.19</s></p>
+                                <div class="price-discount">
+                                    <p>$59.39</p>
+                                    <p class="discount">(25% off)</p>
+                                </div>
+                                <button type="button">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add to cart
+                                </button>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="#">
+                                <img src="img\rp4.jpg" alt="Lenovo Tab M9-2023 - Tablet">
+                                <h3>Lenovo Tab M9-2023 - Tablet</h3>
+                                <p class="short-description">New Lenovo tablet with 32GB. Display Size of 9 Inches</p>
+                                <div class="review">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    5
+                                </div>
+                                <p><s>$109.99</s></p>
+                                <div class="price-discount">
+                                    <p>$98.99</p>
+                                    <p class="discount">(10% off)</p>
+                                </div>
+                                <button type="button">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add to cart
+                                </button>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="#">
+                                <img src="img\rp5.jpg" alt="Android Tablet, 10.1 inch Android 13 Tablets 6GB RAM 64GB ROM 1TB Expand">
+                                <h3>Android Tablet, 10.1 inch Android 13 Tablets 6GB RAM 64GB ROM 1TB Expand</h3>
+                                <p class="short-description">Renew Android tablet with 64GB. Display Size of 10.1 Inches</p>
+                                <div class="review">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    3
+                                </div>
+                                <p><s>$109.99</s></p>
+                                <div class="price-discount">
+                                    <p>$71.49</p>
+                                    <p class="discount">(35% off)</p>
+                                </div>
+                                <button type="button">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add to cart
+                                </button>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="#">
+                                <img src="img\rp6.jpg" alt="Lenovo tablet de 10.1 pulgadas Android 13,12GB RAM">
+                                <h3>Lenovo tablet, 10.1 inches Android 13,12GB RAM</h3>
+                                <p class="short-description">
+                                    New tablet, 10.1 inches Android 13,12GB RAM, 128GB. Quad-Core 2.0 Ghz.
+                                </p>
+                                <div class="review">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    5
+                                </div>
+                                <p><s>$109.99</s></p>
+                                <div class="price-discount">
+                                    <p>$99.99</p>
+                                    <p class="discount">(9% off)</p>
+                                </div>
+                                <button type="button">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add to cart
+                                </button>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="#">
+                                <img src="img\rp7.jpg" alt="Tablet Intel  13 de 7 inches">
+                                <h3>Tablet Intel  13 with 7 inches, 6GB RAM</h3>
+                                <p class="short-description">
+                                    New Intel Tablet, 7 inches Android 13,6GB RAM, 64GB.
+                                </p>
+                                <div class="review">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    5
+                                </div>
+                                <p><s>$72.94</s></p>
+                                <div class="price-discount">
+                                    <p>$40.18</p>
+                                    <p class="discount">(45% off)</p>
+                                </div>
+                                <button type="button">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add to cart
+                                </button>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="#">
+                                <img src="img\rp8.jpg" alt="Tablet COOPERS 10 inches, 32GB ROM">
+                                <h3>Tablet COOPERS 10 inches, 32GB ROM</h3>
+                                <p class="short-description">
+                                    Used Tablet COOPERS 10 inches, 32GB ROM. Quad-Core. 6000 mAh.
+                                </p>
+                                <div class="review">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    4
+                                </div>
+                                <p><s>$69.99</s></p>
+                                <div class="price-discount">
+                                    <p>$49.99</p>
+                                    <p class="discount">(29% off)</p>
+                                </div>
+                                <button type="button">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add to cart
+                                </button>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="#">
+                                <img src="img\rp9.jpg" alt="Tablet Lenovo 13 with 10.1 inches, 6 GB RAM, 128 GB ROM.">
+                                <h3>Tablet Lenovo 13 with 10.1 inches, 6 GB RAM, 128 GB ROM</h3>
+                                <p class="short-description">
+                                    Used Tablet Lenovo 13 with 10.1 inches, 6 GB RAM, 128 GB ROM. 8000 mAh. Dual Camera.
+                                </p>
+                                <div class="review">
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    4
+                                </div>
+                                <p><s>$99.99</s></p>
+                                <div class="price-discount">
+                                    <p>$69.99</p>
+                                    <p class="discount">(22% off)</p>
+                                </div>
+                                <button type="button">
+                                    <i class="fa-solid fa-cart-shopping"></i>Add to cart
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="banner-plp">
+                    <img src="img\banner-plp.jpg" alt="Banner">
+                </div>
+            </div>
+            <footer>
+                <div class="footer-top">
+                    <div class="footer-left">
+                        <p>Social reason: Ignis & Associates</p>
+                        <p>NIT: 890.900.943-1</p>
+                    </div>
+                    <div class="footer-center">
+                        <a href="#"><img src="img/facebook-logo.svg" alt="Facebook"></a>
+                        <a href="#"><img src="img/twitter-logo.svg" alt="Twitter"></a>
+                        <a href="#"><img src="img/instagram-logo.svg" alt="Instagram"></a>
+                    </div>
+                    <div class="footer-right">
+                        <img src="img\visa-logo.svg" alt="Visa">
+                        <img src="img\mastercard-logo.svg" alt="Mastercard">
+                        <img src="img\paypal-logo.svg" alt="PayPal">
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-column">
+                        <h3 class="footer-title">Our Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Stores</a></li>
+                            <li><a href="#">Our Brands</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Credit Card</a></li>
+                            <li><a href="#">Tax Certificates</a></li>
+                            <li><a href="#">Raffles</a></li>
+                            <li><a href="#">Employee and Cooperative Fund</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">Online Shopping</h3>
+                        <ul>
+                            <li><a href="index.html">Main Page</a></li>
+                            <li><a href="plp.html">Product List</a></li>
+                            <li><a href="pdp.html">Product Description</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Secure Payment</a></li>
+                            <li><a href="#">Shipping Methods</a></li>
+                            <li><a href="#">Payment Methods</a></li>
+                            <li><a href="#">Insurance</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">Policies</h3>
+                        <ul>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Online Sales Agreement</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Personal Data Processing</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Return and Exchange Policy</a></li>
+                            <li><a href="#">Code of Ethics</a></li>
+                            <li><a href="#">SST Standards Manual for Third Parties</a></li>
+                            <li><a href="#">Ethics Line</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
